@@ -8,7 +8,7 @@ Programación Estructurada (PED)
 
 - [Campos Hernández, Carlos Adalberto. (CH222748)](https://github.com/marroquin9953)
 
-- [ Martinez Alfaro, Ludwin Enrique. (MA222763) ](https://github.com/marroquin9953)
+- [ Martínez Alfaro, Ludwin Enrique. (MA222763) ](https://github.com/marroquin9953)
 
 ## Destinatario
 
