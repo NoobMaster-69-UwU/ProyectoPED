@@ -13,7 +13,7 @@ namespace ProyectoPED
 {
     public partial class GestionarCitas : Form
     {
-        private string connectionString = "Data Source=.;Initial Catalog=ProgramaMedico;Integrated Security=True";
+        private string connectionString = "Data Source=ISIDRO\\SQLEXPRESS;Initial Catalog=ProgramaMedico;Integrated Security=True";
         private int selectedCitaID;
         private Dictionary<int, Cita> citasDictionary;
         public GestionarCitas()

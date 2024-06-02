@@ -16,7 +16,7 @@ namespace ProyectoPED
 
         private int citaId;
         private int pacienteId;
-        private string connectionString = @"Data Source=DESKTOP-1GLH020;Initial Catalog=ProgramaMedico;Integrated Security=True;";
+        private string connectionString = @"Data Source=ISIDRO\SQLEXPRESS;Initial Catalog=ProgramaMedico;Integrated Security=True;";
         public FormHistorialMedico(int citaId, int pacienteId)
         {
             InitializeComponent();

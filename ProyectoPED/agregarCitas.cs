@@ -24,7 +24,7 @@ namespace ProyectoPED
         {
 
         }
-        private string connectionString = "Data Source=.;Initial Catalog=ProgramaMedico;Integrated Security=True";
+        private string connectionString = "Data Source=ISIDRO\\SQLEXPRESS;Initial Catalog=ProgramaMedico;Integrated Security=True";
 
 
         private void LoadComboBoxes()

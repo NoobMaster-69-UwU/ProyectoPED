@@ -18,7 +18,7 @@ namespace ProyectoPED
     {
 
         //conexion bdd
-        private string connectionString = @"Data Source=DESKTOP-1GLH020;Initial Catalog=ProgramaMedico;Integrated Security=True;";
+        private string connectionString = @"Data Source=ISIDRO\SQLEXPRESS;Initial Catalog=ProgramaMedico;Integrated Security=True;";
 
 
         public login()
@@ -97,6 +97,11 @@ namespace ProyectoPED
 
 
         private void login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

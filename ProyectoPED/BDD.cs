@@ -12,7 +12,7 @@ namespace ProyectoPED
 
         public static SqlConnection ObtnerConexion()
         {
-            SqlConnection conn = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=ProgramaMedico;Data Source=DESKTOP-1GLH020");
+            SqlConnection conn = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=ProgramaMedico;Data Source=ISIDRO\\SQLEXPRESS");
             conn.Open();
 
             return conn;

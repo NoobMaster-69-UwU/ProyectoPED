@@ -43,11 +43,12 @@ namespace ProyectoPED
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(448, 98);
+            this.label1.Location = new System.Drawing.Point(448, 94);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 23);
+            this.label1.Size = new System.Drawing.Size(266, 69);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Login";
+            this.label1.Text = "Te damos la bienvenida\r\n\r\nInicio de Sesión";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -68,15 +69,16 @@ namespace ProyectoPED
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(452, 337);
+            this.textBoxPassword.Location = new System.Drawing.Point(452, 303);
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(237, 20);
             this.textBoxPassword.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(452, 173);
+            this.label2.Location = new System.Drawing.Point(449, 182);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 4;
@@ -86,7 +88,7 @@ namespace ProyectoPED
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(452, 292);
+            this.label3.Location = new System.Drawing.Point(449, 274);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 5;
@@ -94,7 +96,7 @@ namespace ProyectoPED
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(455, 410);
+            this.button1.Location = new System.Drawing.Point(452, 364);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(145, 59);
             this.button1.TabIndex = 6;

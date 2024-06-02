@@ -18,7 +18,7 @@ namespace ProyectoPED
 
         private int doctorId;
         private string nombreDoctor;
-        private string connectionString = @"Data Source=DESKTOP-1GLH020;Initial Catalog=ProgramaMedico;Integrated Security=True;";
+        private string connectionString = @"Data Source=ISIDRO\SQLEXPRESS;Initial Catalog=ProgramaMedico;Integrated Security=True;";
         public FormDoctor(int doctorId, string nombreDoctor)
         {
             InitializeComponent();
@@ -42,15 +42,15 @@ namespace ProyectoPED
             CargarCitas(fechaSeleccionada);
         }
 
-        private void CargarCitas(DateTime fecha)
+        private void CargarCitas(DateTime fechaFiltro)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT CitaID, PacienteID, FechaHora, Descripcion FROM Citas WHERE EmpleadoID = @DoctorID AND CONVERT(date, FechaHora) = @Fecha";
+                string query = "SELECT [CitaID], [PacienteID], [FechaHora], [Descripcion] FROM [ProgramaMedico].[dbo].[Citas] WHERE EmpleadoID = @DoctorID AND CONVERT(date, FechaHora) = @FechaFiltro";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@DoctorID", doctorId);
-                cmd.Parameters.AddWithValue("@Fecha", fecha);
+                cmd.Parameters.AddWithValue("@FechaFiltro", fechaFiltro.ToString("yyyy-MM-dd")); // Use ISO format
 
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -60,10 +60,12 @@ namespace ProyectoPED
         }
 
 
+
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Close(); // Cerrar el formulario actual
         }
+
 
         private void dataGridViewCitas_DoubleClick(object sender, EventArgs e)
         {
